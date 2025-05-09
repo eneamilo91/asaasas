@@ -298,7 +298,7 @@ Dropout is a regularization technique where **random neurons are temporarily "sw
 - **Model Ensembling Effect**: Mimics averaging predictions from multiple networks  
 
 ![Training vs Inference](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67fd4e25-6c1a-4d4a-9070-181c3c65d34a_3197x1440.png)  
-*Left: Normal training. Right: Dropout deactivates random neurons.
+*Left: Training phase. Right: Inference phase.
 
 ### Formula Example:
 For a neuron output `x` during training:  
