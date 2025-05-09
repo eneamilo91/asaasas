@@ -1,7 +1,7 @@
 # Regularization Techniques: Your Toolkit to Fight Overfitting
 
 ![Regularization Methods Collage](https://towardsdatascience.com/wp-content/uploads/2021/12/1hawKFCLbd0DC_CqKLTxfdQ.png)  
-*From L1 to Early Stopping – each technique tackles overfitting in unique ways. [Image Source]*
+*From L1 to Early Stopping – each technique tackles overfitting in unique ways.
 
 Overfitting is the arch-nemesis of machine learning. It’s when your model memorizes the training data like a textbook but fails its real-world exam. Enter **regularization techniques** – clever strategies that keep models humble, generalizable, and battle-ready.
 
@@ -71,7 +71,7 @@ In the following posts, we’ve deep-dived into each technique with code example
 # L1 Regularization Explained: Mechanics, Pros, and Cons
 
 ![L1 vs L2 Regularization](https://media.licdn.com/dms/image/v2/C5612AQGik9PIOCdcoA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1527462045954?e=1751500800&v=beta&t=EYXM-8B2J9g9VydUNqNpOkrguMB1jnlkpOINT-AUb48)  
-*L1 regularization (Lasso) tends to create sparse models by pushing some weights to zero. [Image Source]*
+*L1 regularization (Lasso) tends to create sparse models by pushing some weights to zero.
 
 Regularization techniques are essential tools in machine learning to prevent overfitting. Today, we'll dive into **L1 regularization** (also called Lasso regularization) to understand how it works and when to use it.
 
@@ -172,7 +172,7 @@ print("Weights:", lasso.coef_)  # Output: [0.9, 0.0, 0.3, 0.0]
 # L2 Regularization Explained: Mechanics, Pros, and Cons
 
 ![L1 vs L2 Regularization](https://media.licdn.com/dms/image/v2/C5612AQGik9PIOCdcoA/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1527462045954?e=1751500800&v=beta&t=EYXM-8B2J9g9VydUNqNpOkrguMB1jnlkpOINT-AUb48)  
-*L2 regularization (Ridge) shrinks weights evenly but rarely zeros them out. [Image Source]*
+*L2 regularization (Ridge) shrinks weights evenly but rarely zeros them out.
 
 While L1 regularization creates sparse models, **L2 regularization** (Ridge regularization) takes a gentler approach to prevent overfitting. Let's break down how it works!
 
@@ -269,7 +269,7 @@ print("Weights:", ridge.coef_)  # Output: [0.6, 0.2, 0.4, 0.1]
 # Dropout Regularization Explained: Mechanics, Pros, and Cons
 
 ![Dropout Visualization](https://miro.medium.com/v2/resize:fit:1400/1*iWQzxhVlvadk6VAJjsgXgg.png)  
-*Dropout randomly deactivates neurons during training to prevent overfitting. [Image Source]*
+*Dropout randomly deactivates neurons during training to prevent overfitting.
 
 While L1/L2 regularization tweak loss functions, **dropout** takes a unique approach to fight overfitting in neural networks. Let’s break down how it works and why it’s so popular!
 
@@ -298,7 +298,7 @@ Dropout is a regularization technique where **random neurons are temporarily "sw
 - **Model Ensembling Effect**: Mimics averaging predictions from multiple networks  
 
 ![Training vs Inference](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F67fd4e25-6c1a-4d4a-9070-181c3c65d34a_3197x1440.png)  
-*Left: Normal training. Right: Dropout deactivates random neurons. [Image Source]*
+*Left: Normal training. Right: Dropout deactivates random neurons.
 
 ### Formula Example:
 For a neuron output `x` during training:  
@@ -375,7 +375,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy')
 # Data Augmentation Explained: Mechanics, Pros, and Cons
 
 ![Data Augmentation Examples](https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/creative-assets/s-migr/ul/g/ea/ee/data-augmentation-image-augment.png)  
-*Data augmentation creates new training samples by applying transformations like rotation, flipping, and cropping. [Image Source]*
+*Data augmentation creates new training samples by applying transformations like rotation, flipping, and cropping.
 
 While dropout and L1/L2 modify the model, **data augmentation** tackles overfitting at the data level. It’s like giving your model "virtual glasses" to see more variations of your dataset!
 
@@ -482,7 +482,7 @@ train_generator = datagen.flow_from_directory(
 # Early Stopping Explained: Mechanics, Pros, and Cons
 
 ![Early Stopping Visualization](https://api.wandb.ai/files/ayush-thakur/images/projects/204272/2750c604.png)  
-*Early stopping halts training when validation performance plateaus, preventing overfitting. [Image Source]*
+*Early stopping halts training when validation performance plateaus, preventing overfitting.
 
 **Early stopping** is like a "training watchdog" for machine learning models. Instead of modifying the model or data, it stops training at the right moment to save you from overfitting. Let’s dive into how it works!
 
@@ -509,7 +509,7 @@ Early stopping monitors model performance during training and **halts the proces
 - **Checkpointing**: Save the best model weights automatically during training.  
 
 ![Training vs Validation Loss](https://media.geeksforgeeks.org/wp-content/uploads/20240918112211/training-and-validation-loss-graph.png)  
-*Training loss keeps decreasing, but validation loss rises – time to stop! [Image Source]*
+*Training loss keeps decreasing, but validation loss rises – time to stop!
 
 ---
 
